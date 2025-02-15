@@ -167,3 +167,9 @@ function startLottery() {
 
     }, speed);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 0); // השהייה כדי להבטיח שהתוכן נטען לפני הגלילה
+});
