@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 400px;
+}
+
+button {
+    background-color: #15cc1e;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+p,
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#cardSelections {
+    display: flex;
+    justify-content: center;
+    /* יישור אופקי */
+    align-items: center;
+    /* יישור אנכי (אם יש גובה מתאים) */
+    width: 100%;
+    /* גובה מלא כדי ליישר גם אנכית */
+}
+
+#cardSelections select {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 190px;
+    height: 44px;
+    background-color: #15cc1e52;
+}
+
+
+#numCards {
+
+    border: 2px solid black;
+    /* מסגרת עבה בצבע שחור */
+    padding: 1px;
+    border-radius: 10px;
+    /* פינות מעוגלות */
+    font-size: 18px;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    left: 1%;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* ממרכז את הכפתורים */
+    gap: 10px;
+    margin-bottom: 15%;
+    /* ריווח בין הכפתורים */
+}
+
+.game-button {
+    font-size: 16px;
+    /* גודל טקסט אחיד */
+    padding: 10px 20px;
+    /* ריווח פנימי */
+    min-width: 120px;
+    /* רוחב אחיד לכל הכפתורים */
+    text-align: center;
+    /* יישור טקסט */
+    border: none;
+    background-color: #15cc1e;
+    /* צבע רקע */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    background-color: #15cc1e;
+    /* שינוי צבע בעת מעבר עכבר */
+}

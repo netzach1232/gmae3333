@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 לנצח את הצ'אנס 🎰</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container'>
+
+        <h1 style="font-size: 40px; color: #2aa792;">!!!לנצח את הצ'אנס </h1>
+        <p style="font-size: 25px;">🔥🤑🔥🥳🔥🎉🔥<br>🎰💸🎰💰🎰💎🎰</p>
+
+        <select id='numCards' onchange='updateCardSelectors()'>
+            <option value="1">1️⃣</option>
+            <option value="2">2️⃣</option>
+            <option value="3">3️⃣</option>
+            <option value="4">4️⃣</option>
+            <option value="5">5️⃣</option>
+            <option value="6">6️⃣</option>
+            <option value="7">7️⃣</option>
+            <option value="8">8️⃣</option>
+        </select>
+        <br>
+        <label> בחר קלפים:</label>
+        <br><br>
+        <div id='cardSelections' class="rrrr" style="display: grid;"></div>
+        <br>
+        <label> בחר סכום הימור:</label>
+        <br><br>
+        <select id='betAmount'>
+            <option value="5">5 🪙</option>
+            <option value="10">10 🪙</option>
+            <option value="20">20 🪙</option>
+            <option value="40">40 🪙</option>
+            <option value="80">80 🪙</option>
+            <option value="160">160 🪙</option>
+            <option value="320">320 🪙</option>
+        </select>
+        <div class="button-container">
+            <button onclick='startLottery()' class="game-button">🎲 הגרל 🎲</button>
+            <button onclick="resetGame()" class="game-button">אפס משחק</button>
+        </div>
+
+        <p id='result'>🎯 מחכה לתוצאה...</p>
+        <p> 📉השקעה כוללת: <span id='totalBet'>0</span> </p>
+        <p>💸 רווח/הפסד: <span id='balance'>0</span> </p>
+        <p> 📊 סה"כ הגרלות: <span id='totalDraws'>0</span></p>
+    </div>
+</body>
+
+</html>
