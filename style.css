@@ -22,11 +22,17 @@ button {
     margin-top: 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
+    height: 54px;
+    /* גודל טקסט */
+    transition: background-color 0.8s ease-out;
+    /* החזרה איטית */
+
+
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #5d69d6 !important;
+    transition: none;
 }
 
 #result {
@@ -106,4 +112,27 @@ label {
 .game-button:hover {
     background-color: #15cc1e;
     /* שינוי צבע בעת מעבר עכבר */
+}
+
+#betAmount {
+    font-size: 15px;
+    /* מגדיל את הטקסט */
+    padding: 2px;
+    /* מוסיף ריווח פנימי */
+    width: 75px;
+    /* מרחיב את התפריט */
+    height: 30px;
+    /* מגדיל את גובה התפריט */
+    border-radius: 4px;
+    /* מעגל מעט את הפינות */
+    /* מסגרת מודגשת */
+
+    cursor: pointer;
+}
+
+#betAmount option {
+    font-size: 18px;
+    /* מגדיל את הטקסט של האפשרויות */
+    padding: 10px;
+    /* מגדיל את גובה כל אפשרות */
 }
